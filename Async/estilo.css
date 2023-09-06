@@ -1,0 +1,12 @@
+body {
+    display: flex;
+    flex-direction:  column;
+    max-width: cover;
+    align-items: center;
+    justify-content: center;
+}
+
+#contenedor {
+    display: flex;
+    flex-direction: column;
+}

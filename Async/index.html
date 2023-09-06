@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktail</title>
+    <script src="logic.js"></script>
+    <link href="estilo.css" rel="stylesheet"/>
+</head>
+<body>
+    <!--
+        La api tiene un metodo random,
+        por lo que no es necesario el endpoint
+        <input type="number" id="idDrink" required>
+    -->
+    <button onclick="loadCocktailInfoFetch()">Aleatorio</button>
+    <div id="contenedor">
+
+        <!--ID.
+        Nombre.
+        Categoría.
+        Ingredientes con sus cantidades.
+        Instrucciones o preparación.
+        Imagen-->
+
+
+        <label>Id:<span id="idCocktail"></span></label>
+        <label>Nombre: <span id="nameCocktail"></span></label>
+        <label>Categoría: <span id="catCocktail"></span></label>
+        <label>Ingredientes: </label><div id="ingCocktail"></div>
+        <label>Preparación: <span id="insCocktail"></span></label>
+        <img id="display" src="" alt="" onerror="this.src='Respaldo.png';">
+    </div>
+</body>
+</html>

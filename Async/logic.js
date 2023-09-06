@@ -48,6 +48,7 @@ function showCocktail(cocktail) {
 
     document.getElementById('insCocktail').innerText = received.strInstructions;
     document.getElementById('display').src = received.strDrinkThumb;
+  
 }
 
 async function loadCocktailInfoAsyncAwait() {

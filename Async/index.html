@@ -13,8 +13,8 @@
         por lo que no es necesario el endpoint
         <input type="number" id="idDrink" required>
     -->
-    <button onclick="loadCocktailInfoFetch()">Aleatorio</button>
     <div id="contenedor">
+        <button onclick="loadCocktailInfoAsyncAwait()">Aleatorio</button>
 
         <!--ID.
         Nombre.
@@ -23,13 +23,17 @@
         Instrucciones o preparación.
         Imagen-->
 
-
-        <label>Id:<span id="idCocktail"></span></label>
-        <label>Nombre: <span id="nameCocktail"></span></label>
-        <label>Categoría: <span id="catCocktail"></span></label>
-        <label>Ingredientes: </label><div id="ingCocktail"></div>
-        <label>Preparación: <span id="insCocktail"></span></label>
-        <img id="display" src="" alt="" onerror="this.src='Respaldo.png';">
+<div class="info">
+    <img id="display" src="" alt="" onerror="this.src='Respaldo.png';">
+<div class="texto">
+    
+    <label><strong>Id: </strong><span class="detalles" id="idCocktail"></span></label>
+    <label><strong>Nombre: </strong><span class="detalles" id="nameCocktail"></span></label>
+    <label><strong>Categoría: </strong><span class="detalles" id="catCocktail"></span></label>
+    <label><strong>Ingredientes: </strong></label><div  class="detalles"id="ingCocktail"></div>
+    <label><strong>Preparación: </strong><span class="detalles" id="insCocktail"></span></label>
+</div>
+</div>
     </div>
 </body>
 </html>

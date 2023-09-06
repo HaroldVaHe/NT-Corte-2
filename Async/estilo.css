@@ -4,9 +4,58 @@ body {
     max-width: cover;
     align-items: center;
     justify-content: center;
+    background-color: #230312;
 }
 
 #contenedor {
     display: flex;
     flex-direction: column;
+    /* background-color: antiquewhite; */
+    padding: 1rem;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+}
+.detalles{
+    color: rgb(128, 128, 128);
+}
+.texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+    color: white;
+}
+#display {
+
+margin-top: 1rem;
+
+max-width: 50vw;
+
+max-height: 100vh;
+align-self: center;
+}
+button{
+    margin-bottom: 1rem;
+    min-height: 3rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+  transition: transform 0.1s ease;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+
+}
+button:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #000000;
+    color: white;
+}
+button:active{
+    transform: scale(.5);
+    background-color: #000000;
+    color: white;
 }

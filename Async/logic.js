@@ -63,3 +63,14 @@ async function loadCocktailInfoAsyncAwait() {
         alert('Error al buscar el coctel');
     }
 }
+function showPopup() {
+    var popup = document.getElementById("popup");
+    popup.style.display = "block";
+  }
+  
+  function closePopup() {
+    var popup = document.getElementById("popup");
+    popup.style.display = "none";
+  }
+
+

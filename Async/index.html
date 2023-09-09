@@ -8,44 +8,31 @@
     <link href="estilo.css" rel="stylesheet"/>
 </head>
 <body>
-    <!--
-        La api tiene un metodo random,
-        por lo que no es necesario el endpoint
-        <input type="number" id="idDrink" required>
-    -->
     <div class="contenedor-popup">
-
         <div id="contenedor">
             <button onclick="loadCocktailInfoAsyncAwait()">Aleatorio</button>
+            <div class="info">
+                <img id="display" src="pngegg.png" alt="Cargando..." onerror=" this.src='loading.gif';">
+                <div class="texto">
+                    <label><strong>Id: </strong><span class="detalles" id="idCocktail"></span></label>
+                    <label><strong>Nombre: </strong><span class="detalles" id="nameCocktail"></span></label>
+                    <label><strong>Categoría: </strong><span class="detalles" id="catCocktail"></span></label>
+                    <label><strong>Ingredientes: </strong></label>
+                    <div class="detalles" id="ingCocktail"></div>
+                    <label><strong>Preparación: </strong><span class="detalles" id="insCocktail"></span></label>
             
-            <!--ID.
-                Nombre.
-                Categoría.
-                Ingredientes con sus cantidades.
-                Instrucciones o preparación.
-                Imagen-->
-                
-                <div class="info">
-                    <img id="display" src="" alt="" onerror="this.src='pngegg.png';">
-                    <div class="texto">
-                        
-                        <label><strong>Id: </strong><span class="detalles" id="idCocktail"></span></label>
-                        <label><strong>Nombre: </strong><span class="detalles" id="nameCocktail"></span></label>
-                        <label><strong>Categoría: </strong><span class="detalles" id="catCocktail"></span></label>
-                        <label><strong>Ingredientes: </strong></label><div  class="detalles"id="ingCocktail"></div>
-                        <label><strong>Preparación: </strong><span class="detalles" id="insCocktail"></span></label>
-                        <button id="Favorito" onclick="showPopup()">Agregar a favoritos</button>
-                    </div>
+                    <button id="Favorito" onclick="toggleFavorite()" disabled>Agregar a favoritos</button>
+                    <button id="VerFavoritos" onclick="viewFavorites()">Ver Favoritos</button>
                 </div>
             </div>
-            <div id="popup" class="popup">
-                <div class="popup-content">
-                    <span class="close" onclick="closePopup()">&times;</span>
-                    <h2>Favoritos</h2>
-                    <ul id="myList"></ul>
-                    <p>Contenido de la ventana emergente.</p>
-                </div>
+        </div>
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <h2>Favoritos</h2>
+                <ul id="myList"></ul>
             </div>
-            </div>
-        </body>
-        </html>
+        </div>
+    </div>
+</body>
+</html>

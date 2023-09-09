@@ -1,97 +1,104 @@
 body {
-    display: flex;
-    flex-direction:  column;
-    max-width: cover;
-    align-items: center;
-    justify-content: center;
-    background-color: #230312;
+  display: flex;
+  flex-direction: column;
+  max-width: cover;
+  align-items: center;
+  justify-content: center;
+  background-color: #230312;
 }
-.contenedor-popup{
-    display: flex;
-    flex-direction: row;
+
+.contenedor-popup {
+  display: flex;
+  flex-direction: row;
 }
+
 #contenedor {
-    display: flex;
-    flex-direction: column;
-    /* background-color: antiquewhite; */
-    padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  /* background-color: antiquewhite; */
+  padding: 1rem;
 }
-.info{
-    display: flex;
-    flex-direction: row;
+
+.info {
+  display: flex;
+  flex-direction: row;
 }
-.detalles{
-    color: rgb(128, 128, 128);
+
+.detalles {
+  color: rgb(128, 128, 128);
 }
-.texto{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: 2rem;
-    flex-wrap: wrap;
-    gap: 1rem;
-    color: white;
+
+.texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+  color: white;
 }
+
 #display {
-
-
-max-width: 50vw;
-
-max-height: 80vh;
-align-self: center;
+  max-width: 50vw;
+  max-height: 80vh;
+  align-self: center;
 }
- button{
-    margin-bottom: 1rem;
-    min-height: 3rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+button {
+  margin-bottom: 1rem;
+  min-height: 3rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.3s ease;
   transition: transform 0.1s ease;
   background-color: #f0f0f0;
   transition: background-color 0.3s ease;
   border-radius: 10px;
-font-weight: 900;
+  font-weight: 900;
 }
-button:hover{
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background-color: #000000;
-    color: white;
+
+button:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #000000;
+  color: white;
 }
-button:active{
-    transform: scale(.5);
-    background-color: #000000;
-    color: white;
+
+button:active {
+  transform: scale(.5);
+  background-color: #000000;
+  color: white;
 }
+
 #Favorito {
-    width: 10rem;
-   
-   align-self: center;
+  width: 10rem;
+  align-self: center;
 }
+
 .popup {
-    display: none;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 20vw;
-    height: 100%;
-    background-color: #f1f1f1;
-    overflow-y: auto;
-    padding: 0.5rem;
-    background-color: #2a0101;
-  }
-  
-  .popup-content {
-    padding: 1rem;
-    margin-top: 1rem;
-    color: white;
-  }
-  
-  .close {
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  .close:hover {
-    color: #888;
-  }
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 20vw;
+  height: 100%;
+  background-color: #f1f1f1;
+  overflow-y: auto;
+  padding: 0.5rem;
+  background-color: #2a0101;
+}
+
+.popup-content {
+  padding: 1rem;
+  margin-top: 1rem;
+  color: white;
+}
+
+.close {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #888;
+}

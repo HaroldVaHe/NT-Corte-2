@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cocktail</title>
-    <script src="logic.js"></script>
-    <link href="estilo.css" rel="stylesheet"/>
+    <script src="script.js"></script>
+    <link href="estilo.css" rel="stylesheet" />
 </head>
+
 <body>
     <div class="contenedor-popup">
         <div id="contenedor">
-            <button onclick="loadCocktailInfoAsyncAwait()">Aleatorio</button>
+            <button onclick="fetchRandom()">Aleatorio</button>
             <div class="info">
                 <img id="display" src="pngegg.png" alt="Cargando..." onerror=" this.src='loading.gif';">
                 <div class="texto">
-                    <label><strong>Id: </strong><span class="detalles" id="idCocktail"></span></label>
-                    <label><strong>Nombre: </strong><span class="detalles" id="nameCocktail"></span></label>
-                    <label><strong>Categoría: </strong><span class="detalles" id="catCocktail"></span></label>
+                    <label><strong>Id: </strong><span class="detalles" id="IdCoctel"></span></label>
+                    <label><strong>Nombre: </strong><span class="detalles" id="NombreCoctel"></span></label>
+                    <label><strong>Categoría: </strong><span class="detalles" id="CategoriaCoctel"></span></label>
                     <label><strong>Ingredientes: </strong></label>
-                    <div class="detalles" id="ingCocktail"></div>
+                    <div class="detalles" id="IngredientesCoctel"></div>
                     <label><strong>Preparación: </strong><span class="detalles" id="insCocktail"></span></label>
-            
-                    <button id="Favorito" onclick="toggleFavorite()" disabled>Agregar a favoritos</button>
-                    <button id="VerFavoritos" onclick="viewFavorites()">Ver Favoritos</button>
+
+                    <button id="Favorito" onclick="AgregarFavorito()" disabled>Agregar a favoritos</button>
+                    <button id="VerFavoritos" onclick="AbrirFavs()">Ver Favoritos</button>
                 </div>
             </div>
         </div>
         <div id="popup" class="popup">
             <div class="popup-content">
-                <span class="close" onclick="closePopup()">&times;</span>
+                <span class="close" onclick="CerrarFavs()">&times;</span>
                 <h2>Favoritos</h2>
                 <ul id="myList"></ul>
+                <button id="LimpiarFavoritos" onclick="LimpiarFavoritos()">Borrar Favoritos</button>
             </div>
         </div>
     </div>
 </body>
+
 </html>
